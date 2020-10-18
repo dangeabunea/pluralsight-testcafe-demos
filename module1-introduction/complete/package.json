@@ -1,0 +1,14 @@
+{
+  "name": "testcafe-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome fixtures/"
+  },
+  "author": "Dan Geabunea",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.9.4"
+  }
+}
