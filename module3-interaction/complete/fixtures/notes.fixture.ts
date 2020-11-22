@@ -1,9 +1,9 @@
 import {Selector} from "testcafe";
-import {LoginHelper} from "../helpers/login.helper";
+import {login, logout} from "../helpers/utils";
 
 fixture('Notes Page').page('http://localhost:4200/notes')
-    .beforeEach(async t => await LoginHelper.login(t))
-    .afterEach(async t => await LoginHelper.logout(t));
+    .beforeEach(async t => await login(t))
+    .afterEach(async t => await logout(t));
 
 test('Should filter notes', async t => {
     // arrange
