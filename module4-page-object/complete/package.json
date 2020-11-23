@@ -1,0 +1,16 @@
+{
+  "name": "testcafe-demo",
+  "version": "1.0.0",
+  "description": "module 2 exercise files",
+  "main": "index.js",
+  "scripts": {
+    "tests": "testcafe chrome fixtures/"
+  },
+  "author": "Dan Geabunea",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.9.4",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {}
+}
