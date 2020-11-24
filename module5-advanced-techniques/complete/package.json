@@ -10,8 +10,8 @@
     "tests:edge chrome": "testcafe edge,chrome",
     "tests:screenshot": "testcafe -s takeOnFails=true",
     "tests:slow": "testcafe --speed 0.7",
-    "tests:byname:form": "testcafe -T form*",
-    "tests:byfixture:notes": "testcafe -F Notes*",
+    "tests:byname:form": "testcafe -T form",
+    "tests:byfixture:notes": "testcafe -F Notes",
     "tests:node": "node main.ts -u=john.doe -p=password123"
   },
   "author": "Dan Geabunea",
