@@ -4,7 +4,7 @@
   "description": "module 2 exercise files",
   "main": "index.js",
   "scripts": {
-    "tests": "testcafe chrome fixtures/"
+    "tests": "testcafe"
   },
   "author": "Dan Geabunea",
   "license": "ISC",

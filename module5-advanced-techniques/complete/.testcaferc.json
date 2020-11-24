@@ -1,0 +1,16 @@
+{
+    "src": ["fixtures/"],
+    "screenshots": {
+        "takeOnFails": true,
+        "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png"
+    },
+    "stopOnFirstFail": false,
+    "skipJsErrors": false,
+    "skipUncaughtErrors": false,
+    "browsers": ["chrome:headless"],
+    "selectorTimeout": 3000,
+    "assertionTimeout": 1000,
+    "pageLoadTimeout": 1000,
+    "speed": 1.0,
+    "concurrency": 1
+}
