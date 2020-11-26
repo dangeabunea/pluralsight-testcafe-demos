@@ -32,8 +32,8 @@ test('Should contain correct texts for login form', async (t: TestController) =>
     const loginButtonText = await Selector('button').withAttribute('type', 'submit').innerText;
 
     // assert
-    await t.expect(userInputPlaceholder).contains('username')
-    await t.expect(passwordInputPlaceholder).contains('password')
+    await t.expect(userInputPlaceholder).contains('username');
+    await t.expect(passwordInputPlaceholder).contains('password');
     await t.expect(loginButtonText).eql(' Log in');
 
     console.log('Test 2 executed');

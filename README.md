@@ -16,7 +16,7 @@ subfolders
 ### Run Tests
 
 - Download source code
-- Navigate to the corresponding module and go to the complete folder
+- Navigate to the corresponding module and go to the before/complete folder
 - Run ``npm install``
 - Start the sample application. The sample application can be found at https://github.com/dangeabunea/pluralsight-testcafe-weabapp. 
 - Execute tests ``npm run tests``
