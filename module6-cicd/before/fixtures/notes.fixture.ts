@@ -1,10 +1,13 @@
 import {LoginPageObject} from "../helpers/login.po";
 import {NotesPageObject} from "../helpers/notes.po";
+import {getFromArgs} from "../helpers/args.helper";
 
 const loginPo = new LoginPageObject();
 const notesPo = new NotesPageObject();
 
-fixture('Notes Page').page('http://localhost:4200/notes')
+const url = getFromArgs(process.argv.slice(2), 'url');
+
+fixture('Notes Page').page(`${url}/notes`)
     .beforeEach(async t => await loginPo.loginWithRedirect(t, 'notes'))
     .afterEach(async t => await loginPo.logout(t));
 

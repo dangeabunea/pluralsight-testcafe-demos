@@ -1,9 +1,9 @@
 {
     "src": ["fixtures/"],
-    "screenshots": {
-        "takeOnFails": true,
-        "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png"
-    },
     "browsers": ["chrome:headless"],
-    "concurrency": 2
+    "concurrency": 2,
+    "reporter": {
+        "name": "xunit",
+        "output": "reports/report.xml"
+    }
 }

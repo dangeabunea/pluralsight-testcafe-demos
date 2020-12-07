@@ -1,12 +1,15 @@
 import {LoginPageObject} from "../helpers/login.po";
 import {FeedbackPageObject} from "../helpers/feedback.po";
+import {getFromArgs} from "../helpers/args.helper";
 
 // Define PO
 const loginPo = new LoginPageObject();
 const feedbackPo = new FeedbackPageObject();
 
+const url = getFromArgs(process.argv.slice(2), 'url');
+
 fixture('Feedback form')
-    .page('http://localhost:4200')
+    .page(`${url}/feedback`)
     .beforeEach(async t => loginPo.loginWithRedirect(t, 'feedback'))
     .afterEach(async t => loginPo.logout(t));
 

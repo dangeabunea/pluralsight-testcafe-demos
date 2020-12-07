@@ -1,10 +1,13 @@
 import {Selector} from "testcafe";
 import {LoginPageObject} from "../helpers/login.po";
+import {getFromArgs} from "../helpers/args.helper";
 
 const loginPo = new LoginPageObject();
 
+const url = getFromArgs(process.argv.slice(2), 'url');
+
 fixture('LoginFixture')
-    .page('http://localhost:4200/login');
+    .page(`${url}/login`);
 
 test('should log in', async t => {
     await loginPo.loginWithRedirect(t, 'notes');
