@@ -1,4 +1,4 @@
 {
     "src": ["fixtures/"],
-    "browsers": ["chrome:headless"]
+    "browsers": ["chrome"]
 }

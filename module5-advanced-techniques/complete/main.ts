@@ -4,7 +4,7 @@ const createTestCafe = require('testcafe');
 const args = process.argv.slice(2);
 console.log(args);
 
-createTestCafe('localhost', 1337, 1338).then(tc => {
+createTestCafe('localhost', 1600, 900).then(tc => {
     tc.createRunner()
         .concurrency(2)
         .filter((test, fixture) => {
